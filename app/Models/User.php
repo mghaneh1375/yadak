@@ -1,45 +1,78 @@
 <?php
 
+
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
-{
-    use HasApiTokens, HasFactory, Notifiable;
+/**
+ * An Eloquent Model: 'User'
+ *
+ * @property integer $id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $phone
+ * @property string $username
+ * @property string $password
+ * @property integer $status
+ * @property boolean $special
+ * @property integer $level
+ * @property string $address
+ * @method static \Illuminate\Database\Query\Builder|\App\models\User whereUsername($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\models\User whereLevel($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\models\User wherePhone($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\models\User whereStatus($value)
+ * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
+ */
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+class User extends Authenticatable{
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+	use Notifiable;
+	/**
+	 * The attributes that are mass assignable.
+	 *
+	 * @var array
+	 */
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-        'password' => 'hashed',
-    ];
+
+	protected $table = 'users';
+
+	/**
+	 * The attributes excluded from the model's JSON form.
+	 *
+	 * @var array
+	 */
+
+	protected $fillable = [
+		'username', 'password'
+	];
+
+	protected $hidden = array('password', 'remember_token');
+
+	public function getRememberToken()
+	{
+		return $this->remember_token;
+	}
+
+	public function setRememberToken($value)
+	{
+		$this->remember_token = $value;
+	}
+
+	public function getRememberTokenName()
+	{
+		return 'remember_token';
+	}
+
+	public function getAuthIdentifier() {
+		return $this->getKey();
+	}
+	public function getAuthPassword() {
+		return $this->password;
+	}
+
+	public static function whereId($value) {
+		return User::find($value);
+	}
 }
