@@ -14,10 +14,10 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $product_id
  * @property integer $status
  * @property integer $follow_code
- * @method static \Illuminate\Database\Query\Builder|\App\models\Transaction whereUserId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Transaction whereProductId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Transaction whereStatus($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Transaction whereFollowCode($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Transaction whereUserId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Transaction whereProductId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Transaction whereStatus($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Transaction whereFollowCode($value)
  */
 
 class Transaction extends Model {

@@ -114,7 +114,7 @@ class ReportController extends Controller {
                     $date = explode(' ', $itr->confirm_date)[0];
 
                     $sells[count($sells)] = [
-                        'user' => \App\models\User::whereId($itr->user_id),
+                        'user' => \App\Models\User::whereId($itr->user_id),
                         'date' => $date,
                         "num" => $tmp[1]
                     ];

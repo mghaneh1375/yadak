@@ -251,7 +251,7 @@ class AdminController extends Controller {
 
         foreach ($orders as $order) {
 
-            $order->user = \App\models\User::whereId($order->user_id);
+            $order->user = \App\Models\User::whereId($order->user_id);
             $items = explode('&', $order->products);
             $itemsArr = [];
             $counter = 0;
@@ -307,7 +307,7 @@ class AdminController extends Controller {
 
         foreach ($orders as $order) {
 
-            $order->user = \App\models\User::whereId($order->user_id);
+            $order->user = \App\Models\User::whereId($order->user_id);
             $items = explode('&', $order->products);
             $itemsArr = [];
             $counter = 0;
@@ -403,7 +403,7 @@ class AdminController extends Controller {
 
             DB::update('update basket set reject = true, confirm = false, decease_from_warehouse = false, ' .
                 'confirm_date = current_timestamp, description = "' . $description . '" where id = ' . $id);
-            $customer = \App\models\User::whereId($basket->user_id);
+            $customer = \App\Models\User::whereId($basket->user_id);
             sendSMS($customer->phone, $customer->last_name, "resultpurchase");
 
             echo "ok";
@@ -450,7 +450,7 @@ class AdminController extends Controller {
 
             DB::update('update basket set reject = false, confirm = true, decease_from_warehouse = true, ' .
                 'confirm_date = current_timestamp, arrival_date = "' . $arrival . '", description = "' . $desc . '" where id = ' . $id);
-            $customer = \App\models\User::whereId($basket->user_id);
+            $customer = \App\Models\User::whereId($basket->user_id);
             sendSMS($customer->phone, $customer->last_name, "resultpurchase");
 
             echo "ok";
@@ -464,7 +464,7 @@ class AdminController extends Controller {
 
         foreach ($orders as $order) {
 
-            $order->user = \App\models\User::whereId($order->user_id);
+            $order->user = \App\Models\User::whereId($order->user_id);
             $items = explode('&', $order->products);
             $itemsArr = [];
             $counter = 0;
@@ -519,7 +519,7 @@ class AdminController extends Controller {
 
         if(isset($_POST["id"])) {
 
-            $user = \App\models\User::whereId(makeValidInput($_POST["id"]));
+            $user = \App\Models\User::whereId(makeValidInput($_POST["id"]));
             if($user == null)
                 return;
 
@@ -538,7 +538,7 @@ class AdminController extends Controller {
 
         if(isset($_POST["id"])) {
 
-            $user = \App\models\User::whereId(makeValidInput($_POST["id"]));
+            $user = \App\Models\User::whereId(makeValidInput($_POST["id"]));
             if($user == null)
                 return;
 

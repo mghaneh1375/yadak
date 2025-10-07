@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $send_time
  * @property string $phone
  * @mixin \Eloquent
- * @method static \Illuminate\Database\Query\Builder|\App\models\Activation wherePhone($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Activation wherePhone($value)
  */
 
 class Activation extends Model {

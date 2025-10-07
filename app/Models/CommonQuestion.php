@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $category_id
  * @property string $question
  * @property string $answer
- * @method static \Illuminate\Database\Query\Builder|\App\models\CommonQuestion whereCategoryId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\CommonQuestion whereCategoryId($value)
  */
 
 class CommonQuestion extends Model {

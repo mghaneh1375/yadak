@@ -22,11 +22,11 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $description
  * @property string $products
  * @property string $arrival_date
- * @method static \Illuminate\Database\Query\Builder|\App\models\Basket whereUserId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Basket whereConfirm($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Basket whereReject($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Basket whereFollowCode($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Basket wherePaymentKind($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Basket whereUserId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Basket whereConfirm($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Basket whereReject($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Basket whereFollowCode($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Basket wherePaymentKind($value)
  */
 
 class Basket extends Model {

@@ -12,8 +12,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $category_item_id
  * @property integer $product_id
  * @property string $description
- * @method static \Illuminate\Database\Query\Builder|\App\models\ProductItem whereCategoryItemId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\ProductItem whereProductId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\ProductItem whereCategoryItemId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\ProductItem whereProductId($value)
  */
 
 class ProductItem extends Model

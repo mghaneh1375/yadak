@@ -1,10 +1,10 @@
 <?php
 
-    $offers = \App\models\Product::whereHide(false)->where("secondary_price", "<>", "-1")->where("secondary_price", "<>", "money")->where('number', ">", 0)->get();
+    $offers = \App\Models\Product::whereHide(false)->where("secondary_price", "<>", "-1")->where("secondary_price", "<>", "money")->where('number', ">", 0)->get();
 
     foreach ($offers as $offer) {
 
-        $tmp = \App\models\ProductPic::whereProductId($offer->id)->first();
+        $tmp = \App\Models\ProductPic::whereProductId($offer->id)->first();
         if($tmp != null) {
             $offer->pic = \Illuminate\Support\Facades\URL::asset('productPic/' . $tmp->name);
         }

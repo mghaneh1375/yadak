@@ -19,10 +19,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @property boolean $special
  * @property integer $level
  * @property string $address
- * @method static \Illuminate\Database\Query\Builder|\App\models\User whereUsername($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\User whereLevel($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\User wherePhone($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\User whereStatus($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\User whereUsername($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\User whereLevel($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\User wherePhone($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\User whereStatus($value)
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
  */
 

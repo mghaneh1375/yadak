@@ -9,8 +9,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $id
  * @property integer $super_category_id
  * @property string $name
- * @method static \Illuminate\Database\Query\Builder|\App\models\Category whereSuperCategoryId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Category whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Category whereSuperCategoryId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Category whereName($value)
  */
 
 class Category extends Model

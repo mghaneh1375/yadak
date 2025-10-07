@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property integer $id
  * @property string $pic
- * @method static \Illuminate\Database\Query\Builder|\App\models\SlideBar wherePic($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\SlideBar wherePic($value)
  */
 
 class SlideBar extends Model

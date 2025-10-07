@@ -10,8 +10,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $id
  * @property string $name
  * @property integer $category_id
- * @method static \Illuminate\Database\Query\Builder|\App\models\Brand whereCategoryId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Brand whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Brand whereCategoryId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Brand whereName($value)
  */
 
 class Brand extends Model

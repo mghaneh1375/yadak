@@ -18,15 +18,15 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $brand_id
  * @property integer $best
  * @property boolean $hide
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereHide($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereCategoryId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereMoney($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereOffer($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereNumber($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereBrandId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereSecondaryPrice($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Product whereBest($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereHide($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereCategoryId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereMoney($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereOffer($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereNumber($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereBrandId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereSecondaryPrice($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Product whereBest($value)
  */
 
 class Product extends Model

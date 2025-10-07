@@ -12,8 +12,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $amount
  * @property string $expire
  * @property string $code
- * @method static \Illuminate\Database\Query\Builder|\App\models\Offer whereKind($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Offer whereCode($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Offer whereKind($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Offer whereCode($value)
  */
 
 class Offer extends Model {

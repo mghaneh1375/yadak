@@ -37,7 +37,7 @@
 
                         <?php
                             \Illuminate\Support\Facades\DB::select('select b.created_at, concat(u.first_name, " ", u.last_name) as name from users u, basket b where b.user_id = u.id and b.confirm = false and b.reject = false');
-                            $baskets = \App\models\Basket::whereConfirm(false)->whereReject(false)->get();
+                            $baskets = \App\Models\Basket::whereConfirm(false)->whereReject(false)->get();
                             $warningProducts = \Illuminate\Support\Facades\DB::select('select p.name, p.number, s.name as super_category, c.name as category, b.name as brand from product p, super_category s, category c, brand b, config co where b.id = p.brand_id and p.category_id = c.id and c.super_category_id = s.id and p.number < co.warning_threshold and p.number >= co.critical_threshold');
                             $criticalProducts = \Illuminate\Support\Facades\DB::select('select p.name, p.number, s.name as super_category, c.name as category, b.name as brand from product p, super_category s, category c, brand b, config co where b.id = p.brand_id and p.category_id = c.id and c.super_category_id = s.id and p.number < co.critical_threshold');
                         ?>

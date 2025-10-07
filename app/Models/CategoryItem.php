@@ -11,9 +11,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property integer $category_id
  * @property integer $base_item_id
- * @method static \Illuminate\Database\Query\Builder|\App\models\CategoryItem whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\CategoryItem whereCategoryId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\CategoryItem whereBaseItemId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\CategoryItem whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\CategoryItem whereCategoryId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\CategoryItem whereBaseItemId($value)
  */
 
 class CategoryItem extends Model

@@ -9,8 +9,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $id
  * @property integer $product_id
  * @property integer $user_id
- * @method static \Illuminate\Database\Query\Builder|\App\models\Bookmark whereProductId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\models\Bookmark whereUserId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Bookmark whereProductId($value)
+ * @method static \Illuminate\Database\Query\Builder|\App\Models\Bookmark whereUserId($value)
  */
 
 class Bookmark extends Model {
