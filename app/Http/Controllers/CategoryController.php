@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\models\Category;
-use App\models\CategoryItem;
-use App\models\SuperCategory;
+use App\Models\Category;
+use App\Models\CategoryItem;
+use App\Models\SuperCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 

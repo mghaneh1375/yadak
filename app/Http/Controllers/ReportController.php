@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\models\Basket;
-use App\models\ConfigModel;
-use App\models\Product;
-use App\models\SuperCategory;
+use App\Models\Basket;
+use App\Models\ConfigModel;
+use App\Models\Product;
+use App\Models\SuperCategory;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 

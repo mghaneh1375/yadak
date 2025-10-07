@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\models\Basket;
-use App\models\Category;
-use App\models\Offer;
-use App\models\Product;
-use App\models\ProductPic;
+use App\Models\Basket;
+use App\Models\Category;
+use App\Models\Offer;
+use App\Models\Product;
+use App\Models\ProductPic;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;

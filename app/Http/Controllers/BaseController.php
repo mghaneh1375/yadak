@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\models\Activation;
-use App\models\Category;
-use App\models\CommonQuestion;
-use App\models\FAQCategory;
-use App\models\ProductPic;
-use App\models\SlideBar;
-use App\models\SuperCategory;
-use App\models\User;
+use App\Models\Activation;
+use App\Models\Category;
+use App\Models\CommonQuestion;
+use App\Models\FAQCategory;
+use App\Models\ProductPic;
+use App\Models\SlideBar;
+use App\Models\SuperCategory;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

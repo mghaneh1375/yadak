@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\models\Basket;
-use App\models\CommonQuestion;
-use App\models\ConfigModel;
-use App\models\FAQCategory;
-use App\models\Offer;
+use App\Models\Basket;
+use App\Models\CommonQuestion;
+use App\Models\ConfigModel;
+use App\Models\FAQCategory;
+use App\Models\Offer;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use PHPExcel;

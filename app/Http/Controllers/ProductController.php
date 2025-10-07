@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\models\Bookmark;
-use App\models\Brand;
-use App\models\Category;
-use App\models\CategoryItem;
-use App\models\Product;
-use App\models\ProductItem;
-use App\models\ProductPic;
-use App\models\SuperCategory;
+use App\Models\Bookmark;
+use App\Models\Brand;
+use App\Models\Category;
+use App\Models\CategoryItem;
+use App\Models\Product;
+use App\Models\ProductItem;
+use App\Models\ProductPic;
+use App\Models\SuperCategory;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
